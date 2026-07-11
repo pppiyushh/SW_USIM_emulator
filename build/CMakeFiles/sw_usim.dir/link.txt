@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/sw_usim.dir/link.d CMakeFiles/sw_usim.dir/main.c.o CMakeFiles/sw_usim.dir/src/common/logger.c.o CMakeFiles/sw_usim.dir/src/boot/bootloader.c.o -o sw_usim

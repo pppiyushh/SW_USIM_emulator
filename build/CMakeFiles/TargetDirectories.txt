@@ -1,0 +1,3 @@
+/home/piyush/Projects/USIM_git/SW_USIM_emulator/build/CMakeFiles/sw_usim.dir
+/home/piyush/Projects/USIM_git/SW_USIM_emulator/build/CMakeFiles/edit_cache.dir
+/home/piyush/Projects/USIM_git/SW_USIM_emulator/build/CMakeFiles/rebuild_cache.dir

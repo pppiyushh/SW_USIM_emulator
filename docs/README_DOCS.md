@@ -7,7 +7,7 @@ concept, references the relevant standards, and eventually maps to the
 corresponding implementation in the codebase.
 
 ## Reading Order
-
+0. Befire we start
 1.  01-introduction.md
 2.  02-smart-card.md
 3.  03-uicc.md
