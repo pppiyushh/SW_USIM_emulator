@@ -41,6 +41,45 @@ This project intentionally excludes cryptographic secrets used in commercial SIM
 
 ---
 
+## Scope of This Emulator
+
+This project is **not** a full smart card emulator.
+
+Instead, it focuses on implementing the software layers required to understand how a modem communicates with a USIM using publicly documented standards.
+
+| Standard | Component | Status |
+|----------|-----------|--------|
+| ISO/IEC 7816-1 | Physical Characteristics | ❌ Not Implemented |
+| ISO/IEC 7816-2 | Contact Dimensions & Pin Assignment | ❌ Not Implemented |
+| ISO/IEC 7816-3 | Electrical Interface & Transport | 🚧 Partial (ATR, T=0 simulation planned) |
+| ISO/IEC 7816-4 | APDU Commands & Responses | ✅ Primary Focus |
+| ETSI TS 102 221 | UICC File System | ✅ Planned |
+| 3GPP TS 31.101 | UICC Interface | ✅ Planned |
+| 3GPP TS 31.102 | USIM Application | ✅ Primary Focus |
+
+### Why?
+
+Commercial UICCs consist of dedicated secure hardware, proprietary operating systems, and hardware cryptographic engines.
+
+This project intentionally focuses on the **software behavior** defined by open standards.
+
+The objective is to help engineers understand and experiment with:
+
+- APDU communication
+- UICC file system
+- USIM application behavior
+- PIN verification
+- Authentication procedures
+- Modem ↔ USIM interaction
+
+The project **does not** attempt to emulate:
+
+- Smart card electrical characteristics
+- Physical contacts
+- Secure hardware
+- Hardware cryptographic accelerators
+- Proprietary smart card operating systems
+
 ## Standards
 
 ### ISO/IEC 7816
